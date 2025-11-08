@@ -1,0 +1,76 @@
+/* Gold premium theme for Naam Daan */
+:root{
+  --bg:#0f0f10;
+  --card:#111213;
+  --gold1:#f6d365;
+  --gold2:#fda085;
+  --muted:#cfc8c0;
+  --accent:#e6d7c2;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, 'Merriweather', serif;background:linear-gradient(180deg,var(--bg),#0b0b0b);color:var(--accent);-webkit-font-smoothing:antialiased;line-height:1.5}
+
+.container{max-width:1000px;margin:0 auto;padding:24px}
+
+.site-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:64px;height:64px}
+.brand-text h1{margin:0;font-family:'Merriweather', serif;font-size:1.15rem;color:linear-gradient(var(--gold1),var(--gold2));}
+.brand-text .tagline{margin:0;font-size:0.85rem;color:var(--muted)}
+
+.top-nav a{color:var(--accent);text-decoration:none;margin-left:12px;font-size:0.95rem}
+.top-nav .btn-join{background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#111;padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:600}
+
+.hero{padding:48px 0;background:radial-gradient(circle at 10% 10%, rgba(246,211,101,0.06), transparent 15%);}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+.hero-text h2{font-size:2rem;margin:0;color:var(--accent);font-family:'Merriweather', serif}
+.lead{color:var(--muted);margin-top:12px}
+
+.cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#111;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-outline{border:1px solid rgba(255,255,255,0.06);padding:10px 16px;border-radius:10px;color:var(--accent);text-decoration:none}
+.small-info{margin-top:12px;color:var(--muted);font-size:0.95rem}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;color:var(--accent);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.hero-art .card{text-align:center}
+
+.section{padding:48px 0}
+.section h3{margin-top:0;color:var(--accent);font-family:'Merriweather', serif}
+.muted{color:var(--muted)}
+
+.about-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+.card.small{padding:14px;border-radius:12px}
+
+.wisdom-wrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.wisdom-static blockquote{background:linear-gradient(90deg, rgba(246,211,101,0.03), transparent);padding:12px;border-radius:8px;color:var(--accent);margin:0 0 8px 0}
+.wisdom-animated{min-width:280px;padding:12px;border-radius:10px;background:linear-gradient(90deg, rgba(253,160,133,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+
+#wquote, #quote{font-weight:600;color:var(--gold1);font-size:1.05rem}
+.wisdom-animated #quote{color:var(--gold1);font-weight:700;margin-bottom:8px}
+.controls{display:flex;gap:8px}
+.controls button{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--accent)}
+
+.event-card .muted{color:var(--muted)}
+.event-actions{display:flex;gap:8px;margin-top:12px}
+.event-actions .btn{padding:8px 12px}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-box{padding:14px;border-radius:10px}
+
+.contact-form{display:grid;gap:8px;max-width:720px}
+.contact-form input,.contact-form textarea{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:8px;color:var(--accent);outline:none}
+.form-actions{display:flex;gap:12px;align-items:center}
+.form-msg{margin-top:8px;color:var(--gold2)}
+
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:18px 0;margin-top:24px;color:var(--muted)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:0.9rem}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr; padding-bottom:12px}
+  .about-grid{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  .top-nav{display:none}
+}
